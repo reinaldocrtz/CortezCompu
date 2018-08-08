@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<h1> Secuencia Fibonacci</h1>
+<h2> La suma total de todos los terminos por debajo de los 4 millones es:</h2>
+<body>
+	
+	<script>
+alert( "bienvenido a Secuencia FBNC");
+	var a=0,b=1,c=0, SumaTotal=0;;
+while(c<4000000)
+
+{
+	c=a+b;
+	a=b; b=c;
+
+if((c%2)==1 & c<4000000 ) //si el reciduo de la divicion del nuero c de la secuencia Fibncc es 1, quiere decir que es impar //puedo colocar la otra condicion dentro de un mismo if usando un & 
+
+	{
+		
+
+SumaTotal=SumaTotal+c;
+
+
+}
+
+if (c>4000000) 
+
+{document.write(SumaTotal,"")}
+
+
+
+
+}
+
+</script>
+</body>
+</html>
